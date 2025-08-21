@@ -18,8 +18,7 @@ public class StudentsControllers {
     @GetMapping("api/v1/students")
     @ResponseStatus(HttpStatus.OK)
     public List<Student> getStudents() {
-        List<Student> students = studentsService.findAll();
-        return students;
+        return studentsService.findAll();
     }
 
     @PostMapping("api/v1/students")
